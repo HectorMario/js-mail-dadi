@@ -1,5 +1,5 @@
 const gioca = document.getElementById("tus")
-
+const jerry = document.getElementById("res")
 
 mailControl = {
     email: [
@@ -17,7 +17,7 @@ mailControl = {
 
         if(this.userMail == this.email[i]){
             return true
-        }
+        } 
     }
 
 }
@@ -41,7 +41,7 @@ function dadi() {
 
 if(mailControl.resultato()){
     console.log("divertiti e buona fortuna");
-   
+    jerry.classList.toggle("d-none");
     gioca.addEventListener("click", function(){
         pc= Math.ceil(Math.random()*6);
         user= Math.ceil(Math.random()*6);
